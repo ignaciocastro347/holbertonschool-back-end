@@ -24,4 +24,4 @@ if __name__ == "__main__":
     }, todos))
 
     with open(str(argv[1]) + '.json', 'w') as file:
-    dump({"{}".format(argv[1]): todos}, file)
+        dump({"{}".format(argv[1]): todos}, file)
