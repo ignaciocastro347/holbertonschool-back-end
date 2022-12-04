@@ -9,10 +9,10 @@ if __name__ == "__main__":
 
     users = requests.get(
         "https://jsonplaceholder.typicode.com/users").json()
-    
+
     todos = requests.get(
         "https://jsonplaceholder.typicode.com/todos").json()
-    
+
     user_ids = map(lambda t: t["userId"], todos)
 
     json_todo_list = {}
